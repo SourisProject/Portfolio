@@ -1,0 +1,202 @@
+:root {
+  --primary-color: #000;
+  --background-color: #fff;
+  --secondary-color: grey;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+.logo {
+  width: 180px; /* Taille augmentée pour plus de visibilité */
+  height: auto;
+  transition: transform 0.3s ease; /* Animation de transformation pour le survol */
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Légère augmentation de la taille au survol */
+}
+
+.main-content, .section-content {
+  width: 100%;
+  display: none; /* Caché par défaut */
+}
+
+.main-content.active, .section-content.active {
+  display: block; /* Affiche seulement la section active */
+  background-color: var(--background-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-size: 1.2em;
+  max-width: 600px;
+}
+
+.projects-section {
+  min-height: 250px; /* Ajuste cette valeur selon vos besoins */
+  padding: 20px; /* Ajoute du padding pour plus d'espace intérieur */
+  overflow-x: auto; /* Permet un défilement horizontal */
+  white-space: nowrap; /* Empêche les éléments de passer à la ligne */
+}
+
+.projects-container {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* Aligne les éléments au début de la ligne */
+}
+
+.project {
+  width: 80%; /* Adjust as necessary */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Center the list items */
+}
+
+.project-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.project-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--primary-color);
+  max-width: 37ch; /* Limits the width to approximately 37 characters */
+  word-wrap: break-word; /* Ensures long words break onto the next line */
+  white-space: normal; /* Allows the text to wrap normally */
+  margin-left: auto; /* Centers the list items */
+  margin-right: auto; /* Centers the list items */
+}
+
+.project-description a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.project-description a:hover {
+  color: var(--secondary-color);
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-links li {
+  margin-bottom: 10px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.contact-links a:hover {
+  color: var(--secondary-color);
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+.project p {
+  max-width: 37ch; /* Limits the width to approximately 37 characters */
+  word-wrap: break-word; /* Ensures long words break onto the next line */
+  white-space: normal; /* Allows the text to wrap normally */
+}

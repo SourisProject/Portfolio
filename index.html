@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+    <header>
+      <img src="https://i.imgur.com/yVjicjR.png" alt="Logo Souris Project" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#home" aria-label="Accueil" onclick="showSection('home')">Home</a></li>
+          <li><a href="#about" aria-label="À propos" onclick="showSection('about')">About</a></li>
+          <li><a href="#projects" aria-label="Projets" onclick="showSection('projects')">Projects</a></li>
+          <li><a href="#contact" aria-label="Contact" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="home" class="main-content active">
+      <h1>Hello,<br>Cheese Seekers!</h1>
+      <p>Welcome to my front-end developer portfolio: where bugs are just hidden features, and the design is always 'almost perfect'!</p>
+    </main>
+    <section id="about" class="section-content">
+   
+      <p>Welcome to my portfolio! I recently started my journey in front-end development, driven by a passion for pixelated video games and minimalist design. I look forward to working on AI projects, network applications, while focusing on front-end development. Let's create something amazing together!.</p>
+    </section>
+    <section id="projects" class="section-content projects-section">
+  <h2>My Projects</h2>
+  <!-- Content for projects -->
+      
+      <div class="project">
+  <h3> Personal Side Projects</h3>
+  <ul class="projects-list">
+    <li class="project-description"><a href="https://codepen.io/Pryet/pen/KKLgYWP">Memo</a> : It's simply a styled selector</li>
+    <li class="project-description"><a href="https://codepen.io/Pryet/full/OJYJapX">Select</a> : This platform enhances task and note management, evolving from a basic tool to a customizable application. Users can tailor lists and enjoy advanced editing.</li>
+    <li class="project-description"><a href="https://codepen.io/Pryet/pen/ZENOLoY">MarkDown</a></li>
+    <li class="project-description"><a href="https://codepen.io/Pryet/pen/pomEmar">Survey on Responsive Web Design</a></li>
+    <li class="project-description"><a href="https://codepen.io/Pryet/pen/mdYrYxy">Tribute page</a></li>
+    <li class="project-description"><a href="https://codepen.io/Pryet/pen/eYadaMM">Technical Documentation Page</a></li>
+    <li class="project-description"><a href="https://codepen.io/Pryet/pen/LYoRoda">Landing Page</a></li>
+    <li class="project-description"><a href="https://codepen.io/Pryet/pen/jOoMoxw">Portfolio Webpage</a></li>
+    <li class="project-description"><a href="https://codepen.io/Pryet/pen/OJYRYEN">Palindrome Checker</a></li>
+    <li class="project-description"><a href="https://codepen.io/Pryet/pen/eYadaKr">Roman Numeral Converter</a></li>
+    <li class="project-description"><a href="https://codepen.io/Pryet/pen/mdYrYjJ">Pokémon Search App</a></li>
+  </ul>
+</div>
+      
+    
+      
+      
+</section>
+    <section id="contact" class="section-content">
+       <h2>Contact Me</h2>
+     
+      <ul class="contact-links">
+        <li><a href="mailto:your-email@example.com">lauryne.prh@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/lauryne-prh-9ab000303/" target="_blank">LinkedIn</a></li>
+      </ul>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+   
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
