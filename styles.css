@@ -103,15 +103,17 @@ p {
 }
 
 .project {
-  width: 80%; /* Adjust as necessary */
-  max-width: 800px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
   list-style-type: none;
   padding: 0;
-  text-align: center; /* Center the list items */
 }
 
 .project-image {
@@ -124,11 +126,8 @@ p {
   margin-top: 10px;
   font-size: 1rem;
   color: var(--primary-color);
-  max-width: 37ch; /* Limits the width to approximately 37 characters */
-  word-wrap: break-word; /* Ensures long words break onto the next line */
-  white-space: normal; /* Allows the text to wrap normally */
-  margin-left: auto; /* Centers the list items */
-  margin-right: auto; /* Centers the list items */
+  word-wrap: break-word; /* Permet de couper les mots longs */
+  white-space: normal; /* Permet au texte de revenir à la ligne normalement */
 }
 
 .project-description a {
@@ -196,7 +195,7 @@ p {
 }
 
 .project p {
-  max-width: 37ch; /* Limits the width to approximately 37 characters */
-  word-wrap: break-word; /* Ensures long words break onto the next line */
-  white-space: normal; /* Allows the text to wrap normally */
+  max-width: 37ch; /* Limite la largeur à environ 37 caractères */
+  word-wrap: break-word; /* Permet de couper les mots longs */
+  white-space: normal; /* Permet au texte de revenir à la ligne normalement */
 }
